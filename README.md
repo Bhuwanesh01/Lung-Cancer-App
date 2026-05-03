@@ -47,3 +47,10 @@ Built with **TensorFlow, Streamlit, and Grad-CAM explainability**.
 ---
 
 ## 📁 Project Structure
+lung-cancer-app/
+│
+├── app.py # Main Streamlit application
+├── model.keras # Trained deep learning model
+├── requirements.txt # Dependencies
+└── README.md
+
