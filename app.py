@@ -18,7 +18,7 @@ st.set_page_config(page_title="Lung Cancer Detection AI", layout="wide")
 st.title("🧠 Lung Cancer Detection AI")
 
 # ---------------- MODEL ----------------
-MODEL_PATH = "model_final.h5"
+#MODEL_PATH = "model_final.h5"
 
 @st.cache_resource
 def load_my_model():
