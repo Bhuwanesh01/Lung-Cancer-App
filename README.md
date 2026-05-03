@@ -54,3 +54,54 @@ lung-cancer-app/
 ├── requirements.txt # Dependencies
 └── README.md
 
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+
+git clone https://github.com/your-username/lung-cancer-app.git
+cd lung-cancer-app
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Run the app
+streamlit run app.py
+
+🌐 Deployment
+
+This app is designed to be deployed on Streamlit Cloud.
+
+Steps:
+Push your project to GitHub
+Go to https://streamlit.io/cloud
+Click New App
+Select your repo and app.py
+Deploy 🚀
+📌 Notes
+Ensure model.keras is present in the root directory
+Use tensorflow-cpu for smoother cloud deployment
+Avoid large model sizes (>100MB) unless using Git LFS
+⚠ Disclaimer
+
+This project is for educational and research purposes only.
+It is not a medical diagnostic tool and should not replace professional medical advice.
+
+🙌 Future Improvements
+Multi-class classification (benign / malignant)
+Database integration for patient records
+Authentication system
+Batch report download (ZIP)
+Advanced explainability (SHAP, LIME)
+👨‍💻 Author
+
+Bhuwanesh
+Computer Science Engineering | AI/ML Enthusiast
+
+⭐ If you like this project
+
+Give it a star ⭐ on GitHub!
+
