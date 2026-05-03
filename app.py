@@ -3,7 +3,7 @@ import io
 import numpy as np
 import streamlit as st
 import tensorflow as tf
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from PIL import Image
 import matplotlib.pyplot as plt
 import cv2
@@ -22,10 +22,7 @@ MODEL_PATH = "model_fixed.h5"
 
 @st.cache_resource
 def load_my_model():
-    if not os.path.exists(MODEL_PATH):
-        st.error(f"❌ Model file not found: {MODEL_PATH}")
-        st.stop()
-    return load_model(MODEL_PATH, compile=False)
+    return load_model("model_fixed.h5", compile=False, safe_mode=False)
 
 model = load_my_model()
 
