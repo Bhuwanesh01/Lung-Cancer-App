@@ -2,9 +2,9 @@ import os
 import io
 import numpy as np
 import streamlit as st
-# import tensorflow as tf
-# from tensorflow.keras.models import load_model
-from keras.models import load_model
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+# from keras.models import load_model
 from PIL import Image
 import matplotlib.pyplot as plt
 import cv2
