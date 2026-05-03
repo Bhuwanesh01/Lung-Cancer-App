@@ -22,7 +22,7 @@ st.title("🧠 Lung Cancer Detection AI")
 
 @st.cache_resource
 def load_my_model():
-    return load_model("model_final", compile=False)
+    return load_model("model_final.h5", compile=False, custom_objects={})
 
 model = load_my_model()
 
