@@ -26,7 +26,12 @@ def load_my_model():
     if not os.path.exists(MODEL_PATH):
         st.error(f"❌ Model file not found: {MODEL_PATH}")
         st.stop()
-    return load_model(MODEL_PATH, compile=False, safe_mode=False)
+    return load_model(
+    MODEL_PATH,
+    compile=False,
+    safe_mode=False,
+    custom_objects={}
+)
 
 model = load_my_model()
 
